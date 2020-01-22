@@ -17,7 +17,7 @@ const mepParse = function(url) {
         partyGroup: $('#erpl-political-group-name > span', html).text(),
         country: $('#erpl-member-country-name', html).text(),
         url: url,
-        image: $('.ddl-picture', html).attr('src')
+        image: 'http://www.europarl.europa.eu' + $('.ddl-picture', html).attr('src')
       }
     })
     .catch(function(err){
